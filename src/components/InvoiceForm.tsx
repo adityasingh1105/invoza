@@ -135,7 +135,7 @@ export function InvoiceForm() {
                       <input
                         className={inputClass}
                         {...register(`items.${index}.description`)}
-                        placeholder="Service or product"
+                        placeholder="Enter the description"
                       />
                       {errors.items?.[index]?.description && (
                         <span className="mt-1 block text-xs text-[var(--danger)]">

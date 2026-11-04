@@ -63,7 +63,7 @@ export function CustomerList() {
         </h2>
         <input
           className="w-full max-w-xs rounded-md border border-[var(--line)] px-3 py-2 text-sm sm:w-56"
-          placeholder="Filter by name, email, phone"
+          placeholder="Enter the search"
           value={query}
           onChange={(event) => {
             setQuery(event.target.value)

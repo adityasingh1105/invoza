@@ -130,7 +130,7 @@ export function CustomerForm() {
               <input
                 className={inputClass}
                 {...register('name')}
-                placeholder="Jane Cooper"
+                placeholder="Enter the name"
               />
             </Field>
             <Field label="Email" error={errors.email?.message}>
@@ -138,7 +138,7 @@ export function CustomerForm() {
                 className={inputClass}
                 type="email"
                 {...register('email')}
-                placeholder="jane@example.com"
+                placeholder="Enter the email"
               />
             </Field>
             <Field
@@ -149,7 +149,7 @@ export function CustomerForm() {
               <input
                 className={inputClass}
                 {...register('phone')}
-                placeholder="+1 555 0100"
+                placeholder="Enter the phone"
               />
             </Field>
           </div>
@@ -263,20 +263,40 @@ function AddressBlock({
         {title}
       </legend>
       <Field label="Street" error={errors?.street?.message}>
-        <input className={inputClass} {...register(`${prefix}.street`)} />
+        <input
+          className={inputClass}
+          placeholder="Enter the street"
+          {...register(`${prefix}.street`)}
+        />
       </Field>
       <div className="grid gap-3 sm:grid-cols-2">
         <Field label="City" error={errors?.city?.message}>
-          <input className={inputClass} {...register(`${prefix}.city`)} />
+          <input
+            className={inputClass}
+            placeholder="Enter the city"
+            {...register(`${prefix}.city`)}
+          />
         </Field>
         <Field label="State" error={errors?.state?.message}>
-          <input className={inputClass} {...register(`${prefix}.state`)} />
+          <input
+            className={inputClass}
+            placeholder="Enter the state"
+            {...register(`${prefix}.state`)}
+          />
         </Field>
         <Field label="ZIP" error={errors?.zip?.message}>
-          <input className={inputClass} {...register(`${prefix}.zip`)} />
+          <input
+            className={inputClass}
+            placeholder="Enter the zip"
+            {...register(`${prefix}.zip`)}
+          />
         </Field>
         <Field label="Country" error={errors?.country?.message}>
-          <input className={inputClass} {...register(`${prefix}.country`)} />
+          <input
+            className={inputClass}
+            placeholder="Enter the country"
+            {...register(`${prefix}.country`)}
+          />
         </Field>
       </div>
     </fieldset>
